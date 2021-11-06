@@ -6,7 +6,7 @@ import sys
 import _thread
 import os
 time.sleep(1)
-os.system('cls')
+os.system('clear')
 print('')
 print('      \033[31m ___(_) |_ ___      \033[32m| | _(_) | | ___ _ __ ')
 print('      \033[31m/ __| | __/ _ )\033[32m_____| |/ / | | |/ _ \  __|')
